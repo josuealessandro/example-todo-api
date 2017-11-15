@@ -27,6 +27,6 @@ node('php'){
     }
     
     stage('Docker Ship') {
-        sh 'docker push josuealessandro/todoapi:$BUILD_NUMBER'
+        sh 'docker push josuealessandro/todoapi:$BUILD_NUMBER' 
     }
 }
