@@ -14,5 +14,6 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/user', function (Request $request) {
+    echo 'oi';
     return $request->user();
 })->middleware('auth:api');
